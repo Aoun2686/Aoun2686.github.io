@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("./../webfont/DMSans-Bold.eot");
+    src: url("./../webfont/DMSans-Bold.eot?#iefix") format("embedded-opentype"),
+        url("./../webfont/DMSans-Bold.woff2") format("woff2"),
+        url("./../webfont/DMSans-Bold.woff") format("woff"),
+        url("./../webfont/DMSans-Bold.svg#DMSans-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("./../webfont/DMSans-Medium.eot");
+    src: url("./../webfont/DMSans-Medium.eot?#iefix") format("embedded-opentype"),
+        url("./../webfont/DMSans-Medium.woff2") format("woff2"),
+        url("./../webfont/DMSans-Medium.woff") format("woff"),
+        url("./../webfont/DMSans-Medium.svg#DMSans-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("./../webfont/DMSans-Regular.eot");
+    src: url("./../webfont/DMSans-Regular.eot?#iefix") format("embedded-opentype"),
+        url("./../webfont/DMSans-Regular.woff2") format("woff2"),
+        url("./../webfont/DMSans-Regular.woff") format("woff"),
+        url("./../webfont/DMSans-Regular.svg#DMSans-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "DM Sans";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-size: 16px;
+}
+
+button {
+    font-family: "DM Sans" !important;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DM Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------------------header--------------------- */
+header.header {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+header.header img.web-logo {
+    max-width: 180px;
+}
+
+.header nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* --------------------sec-blogs------------------ */
+button.btn {
+    background-color: #1abc9c;
+    padding: 0;
+    margin-left: 6px;
+    min-width: 80px;
+}
+
+button.btn a:hover {
+    color: #212529 !important;
+    background-color: #1abc9c;
+}
+
+button.btn:hover {
+    color: #212529 !important;
+    background-color: #1abc9c;
+}
+
+button.btn a:focus-visible {
+    outline: 0 !important;
+    color: #212529 !important;
+    background-color: #1abc9c;
+}
+
+.blogs .card .card-body h5 {
+    font-size: 24px;
+    color: black;
+}
+
+.blogs .card .card-body p {
+    color: #212529;
+}
+
+.blogs .card .card-body .entry ul li {
+    color: #adb5bd;
+    margin: 0 8px;
+}
+
+.blogs .card .card-body .entry ul li a {
+    color: #adb5bd;
+}
+
+.blogs .card .card-body .entry ul li a:hover {
+    color: #6c757d;
+}
+
+.blogs .card .card-body a.card-link {
+    color: #1abc9c;
+    border-bottom: 1px solid #1abc9c;
+}
+
+.blogs .card .card-body a.card-link:hover {
+    color: #212529;
+    border-bottom: 1px solid #212529;
+}
+.blogs .ask h2{
+    color: #1abc9c;
+}
+.blogs .ask button.btn:active {
+    background-color: #1abc9c !important;
+    border-color: #1abc9c !important;
+}
+/* --------------------single-blog---------------- */
+
+.blogs .comments .comment-receive p.recived {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+.blogs .comments .comment-receive p.recived a.cmnt-date{
+    color: #adb5bd;
+    text-decoration: none;
+    
+}
+.blogs .comments .comment-receive p.recived span.imge {
+    top: 15%;
+    left: -23px;
+    border: 1px solid #ced4da;
+    border-radius: 50%;
+    padding: 3px;
+}
+.blogs .comments .comment-receive {
+    width: 90%;
+}
+
+.blogs .comments .comment-reply p.answer {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+.blogs .comments .comment-reply p.answer span.reply-imge {
+    background-color: #1abc9c;
+    top: 12%;
+    left: -25px;
+    border: 1px solid #ced4da;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    text-align-last: center;
+}
+.blogs .comments .comment-reply p.answer a.cmnt-date {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.blogs .comments h3.leve-cmnt span {
+    color: #1abc9c;
+}
+.blogs .comments textarea {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+.new-post .card .card-body span.post-date{
+    font-size: 14px;
+    color: #adb5bd;
+}
+/* ------------------login--------------- */
+
+section.login {
+    background-image: url("./../images/login-bg-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.login .main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: -1px -1px 10px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.login .main .row .box {
+    background-color: #1abc9c;
+    border-radius: 8px 0 0 8px;
+}
+
+.login .main .row .content h2 {
+    color: #1abc9c;
+}
+
+.form-control:focus {
+    border-color: #ced4da !important;
+    box-shadow: none !important;
+}
+
+
+/* -------------------ask-question------------ */
+section.ask-question img.ask-img{
+    width: 610px;
+}
+.ask-question .guid {
+    background-color: #ebf4fb;
+    border: 1px solid #9cc2df;
+        border-radius: 3px;
+}
+.ask-question .title{
+    border: 1px solid #adb5bd;
+    border-radius: 3px;
+
+}
+.ask-question .detail-problem{
+    background-color: #f7f7f8;
+    border: 1px solid #adb5bd;
+    border-radius: 3px;
+}
+.ask-question .tag {
+    background-color: #f7f7f8;
+    border: 1px solid #adb5bd;
+    border-radius: 3px;
+}
+.ask-question .review {
+    background-color: #f7f7f8;
+    border: 1px solid #adb5bd;
+    border-radius: 3px;
+}
+/* ----------------------users-page------------------ */
+section.users table thead {
+    background-color: #1abc9c;
+}
+
+section.users table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+section.users table tbody th span.imge {
+    font-size: 14px;
+    color: white;
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 5px;
+}
