@@ -39,7 +39,8 @@ body {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    font-size: 16px;
+    font-size: 14px;
+    
 }
 
 button {
@@ -61,132 +62,338 @@ h6 {
     font-display: swap;
 }
 
+button.btn {
+    background-color: #2daae9;
+    padding: 0 6px;
+    margin-left: 6px;
+    color: white;
+}
+
+button.btn a:hover {
+    color: #212529 !important;
+    background-color: #2daae9;
+}
+
+button.btn:hover {
+    color: #212529 !important;
+    background-color: #2daae9;
+}
+
+button.btn a:focus-visible {
+    outline: 0 !important;
+    color: #212529 !important;
+    background-color: #2daae9;
+}
+
 /* ---------------------header--------------------- */
 header.header {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 header.header img.web-logo {
     max-width: 180px;
 }
 
+.header nav ul li a {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .header nav ul li a:hover {
-    color: #1abc9c;
+    color: #2daae9;
 }
 
+header.header button.search-btn {
+    background-color: #2daae9;
+    padding: 8px 10px;
+    right: 0;
+    top: 0px;
+    border-radius: 4px;
+}
+header.header .nav-bar ul li{
+    list-style-type: none;
+    padding: 0 10px;
+}
+header.header .nav-bar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.header .navbar.one .container{
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 15px;
+}
+.header .navbar.one button.btn:active{
+    background-color: #2daae9;
+    border-color: #2daae9;
+}
 /* --------------------sec-blogs------------------ */
-button.btn {
-    background-color: #1abc9c;
-    padding: 0;
-    margin-left: 6px;
-    min-width: 80px;
-}
 
-button.btn a:hover {
-    color: #212529 !important;
-    background-color: #1abc9c;
-}
-
-button.btn:hover {
-    color: #212529 !important;
-    background-color: #1abc9c;
-}
-
-button.btn a:focus-visible {
-    outline: 0 !important;
-    color: #212529 !important;
-    background-color: #1abc9c;
-}
-
-.blogs .card .card-body h5 {
-    font-size: 24px;
-    color: black;
-}
-
-.blogs .card .card-body p {
-    color: #212529;
-}
-
-.blogs .card .card-body .entry ul li {
-    color: #adb5bd;
-    margin: 0 8px;
-}
-
-.blogs .card .card-body .entry ul li a {
+section.blogs button.topics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #adb5bd;
 }
 
-.blogs .card .card-body .entry ul li a:hover {
-    color: #6c757d;
+.blogs button.topics span img {
+    width: 22px;
 }
 
-.blogs .card .card-body a.card-link {
-    color: #1abc9c;
-    border-bottom: 1px solid #1abc9c;
+.blogs button.topics[aria-expanded="true"] span img {
+    transform: rotate(181deg);
 }
 
-.blogs .card .card-body a.card-link:hover {
+section.blogs .collapse.topics li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+section.blogs .collapse.topics li:hover {
+    background-color: #f8f9fa;
+    padding: 0 0;
+}
+
+.blogs .collapse.topics li a {
+    text-decoration: none;
     color: #212529;
-    border-bottom: 1px solid #212529;
+    font-size: 16px;
 }
-.blogs .ask h2{
-    color: #1abc9c;
+.blogs .collapse.topics li a:hover {
+    color: #2daae9;
 }
-.blogs .ask button.btn:active {
-    background-color: #1abc9c !important;
-    border-color: #1abc9c !important;
-}
-/* --------------------single-blog---------------- */
-
-.blogs .comments .comment-receive p.recived {
-    border: 1px solid #ced4da;
+.blogs .p-description{
+    background-color: #f8f9fa;
     border-radius: 8px;
 }
-.blogs .comments .comment-receive p.recived a.cmnt-date{
+.blogs .p-description h2 span{
+    color: #2daae9;
+}
+.blogs .p-description p{
     color: #adb5bd;
-    text-decoration: none;
+}
+.blogs .p-description img{
+    border-radius: 8px;
+}
+.blogs .crd-items{
+    background-color: #f8f9fa;
+    border-radius: 8px;
     
 }
-.blogs .comments .comment-receive p.recived span.imge {
-    top: 15%;
-    left: -23px;
-    border: 1px solid #ced4da;
-    border-radius: 50%;
-    padding: 3px;
+.blogs .accordion-body {
+    background-color: #f8f9fa;
 }
-.blogs .comments .comment-receive {
-    width: 90%;
+.blogs button.accordion-button {
+    background-color: #f0f2f4;
+}
+.blogs button.btn.one {
+    background-color: #5bbdee;
 }
 
-.blogs .comments .comment-reply p.answer {
-    border: 1px solid #ced4da;
-    border-radius: 8px;
+.blogs button.btn.two {
+    background-color: #81bf4b;
 }
-.blogs .comments .comment-reply p.answer span.reply-imge {
-    background-color: #1abc9c;
-    top: 12%;
-    left: -25px;
-    border: 1px solid #ced4da;
-    border-radius: 50%;
-    padding: 10px;
+
+.blogs button.btn.three {
+    background-color: #fff06e;
+}
+
+.blogs button.btn.four {
+    background-color: #ec8698;
+}
+
+.blogs .accordion-body a.box:hover {
+    background-color: black !important;
+}
+.blogs .structItem {
+    border-bottom: 1px solid #ededed;
+    padding: 0 0 15px;
+}
+
+.structItem:nth-last-child(1){
+    border-bottom: 0px;
+}
+
+.blogs .structItem .struct-icon {
     width: 50px;
-    text-align-last: center;
-}
-.blogs .comments .comment-reply p.answer a.cmnt-date {
-    color: #adb5bd;
-    text-decoration: none;
+    margin-right: 8px;
+
+
 }
 
-.blogs .comments h3.leve-cmnt span {
-    color: #1abc9c;
+.blogs .structItem .strcter-title button.btn.one {
+    font-size: 12px;
 }
-.blogs .comments textarea {
-    border: 1px solid #ced4da;
+.blogs .structItem .strcter-title h3:hover{
+    color: #2daae9;
+}
+.blogs .structItem .strcter-title button.btn.four {
+    font-size: 12px;
+}
+
+.blogs .structItem .struct-icon img {
+    width: 40px;
     border-radius: 8px;
 }
-.new-post .card .card-body span.post-date{
-    font-size: 14px;
+
+.blogs .structItem .reply-date img {
+    width: 30px;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.blogs .structItem span {
     color: #adb5bd;
+    font-size: 12px;
+}
+
+.blogs .structItem .item {
+    flex: 1;
+}
+
+.blogs .structItem .reply {
+    border-right: 1px solid #adb5bd;
+    margin-right: 10px;
+    padding: 0 10px 0 0;
+}
+
+.blogs .structItem .replay-view {
+    width: 200px;
+    margin-left: 15px;
+}
+
+.blogs .normal-threads h2 {
+    border: 1px solid #adb5bd1c;
+    padding: 17px 15px;
+    font-size: 16px;
+    background-color: #adb5bd1c;
+    border-radius: 6px;
+}
+
+.blogs .posts .new-post {
+    border-bottom: 1px solid #ededed;
+    padding: 10px 0;
+}
+
+.blogs .posts .new-post .new-post-icon img {
+    width: 30px;
+    border-radius: 8px;
+    margin: 6px 11px 0 0;
+}
+
+.blogs .posts .new-post .post-date span.p-date {
+    color: #adb5bd;
+}
+.blogs .posts .post-body .post-title a:hover{
+    color: #2daae9 !important;
+}
+/* ------------------single-blogs--------------- */
+section.single.blogs{
+    background-color: #f8f9fa;
+}
+section.single.blogs .question-thread .quesn-person{
+    background-color: #f0f2f4;
+    border-radius: 8px;
+
+}
+section.single.blogs .question-thread .quesn-person p{
+    background-color: #81bf4b;
+    border-radius: 8px;
+}
+.single.blogs .question-thread .message-inner .message-person a{
+    text-decoration: none;
+    color: #2daae9;
+}
+.single.blogs .question-thread .message-inner .message-person{
+    border-right: 1px solid #212529;
+    width: 400px;
+
+}
+.single.blogs .message-inner .message-person a.user-img img{
+    width: 50px;
+}
+.single.blogs .question-thread .message-inner{
+    background-color: #f0f2f4;
+    border-radius: 8px;
+}
+.single.blogs .message-inner .message-footer a {
+    background-color: #1b1d2133;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 4px;
+}
+.single.blogs .message-inner .message-footer a:hover{
+    color: #2daae9;
+}
+.single.blogs .question-thread .message-reply{
+    background-color: #f0f2f4;
+    border-radius: 8px;
+}
+.single.blogs .question-thread .message-reply .reply-person{
+    border-right:1px solid #212529;
+    width: 400px;
+
+}
+.single.blogs .message-reply .reply-person a{
+    text-decoration: none;
+    color: #2daae9;
+}
+.single.blogs .message-reply .reply-person a.user-img img{
+    width: 50px;
+}
+.single.blogs .normal-threads {
+    background-color: #f0f2f4;
+    border-radius: 8px;
+}
+
+.single.blogs .question-thread .share-sec a.facebook:hover span{
+    color: white;
+}
+
+.single.blogs .question-thread .share-sec{
+    display: flex;
+    align-items: center;
+}
+.single.blogs .question-thread .share-sec a:hover{
+    background-color: #2daae9;
+    border-radius: 8px;
+}
+.single.blogs .question-thread .share-sec a {
+    color: #1b1d2133;
+    padding: 7px 5px 0px;
+}
+.single.blogs .question-thread .share-sec a:hover{
+    color: #fff;
+}
+/* ------------------blog-question--------------- */
+section.blogs.question{
+    background-color: #f8f9fa;
+    
+}
+section.blogs.question .question-body{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 1px 12px 1px #ced4da;
+}
+section.blogs.question .question-body form input,textarea,.form-select {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 10px;
+    border: 1px solid #ededed;
+}
+.blogs.question .question-body form label{
+    font-size: 16px;
+    font-weight: 600;
+}
+.blogs.question .question-body form label p{
+    font-size: 14px;
+    font-weight: 400;
 }
 /* ------------------login--------------- */
 
@@ -220,53 +427,4 @@ section.login {
 .form-control:focus {
     border-color: #ced4da !important;
     box-shadow: none !important;
-}
-
-
-/* -------------------ask-question------------ */
-section.ask-question img.ask-img{
-    width: 610px;
-}
-.ask-question .guid {
-    background-color: #ebf4fb;
-    border: 1px solid #9cc2df;
-        border-radius: 3px;
-}
-.ask-question .title{
-    border: 1px solid #adb5bd;
-    border-radius: 3px;
-
-}
-.ask-question .detail-problem{
-    background-color: #f7f7f8;
-    border: 1px solid #adb5bd;
-    border-radius: 3px;
-}
-.ask-question .tag {
-    background-color: #f7f7f8;
-    border: 1px solid #adb5bd;
-    border-radius: 3px;
-}
-.ask-question .review {
-    background-color: #f7f7f8;
-    border: 1px solid #adb5bd;
-    border-radius: 3px;
-}
-/* ----------------------users-page------------------ */
-section.users table thead {
-    background-color: #1abc9c;
-}
-
-section.users table tbody tr:hover {
-    background-color: #f8f9fa;
-}
-
-section.users table tbody th span.imge {
-    font-size: 14px;
-    color: white;
-    background-color: #1abc9c;
-    border: 1px solid #1abc9c;
-    border-radius: 50%;
-    padding: 6px;
-    margin-right: 5px;
 }
